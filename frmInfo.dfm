@@ -3,7 +3,7 @@ object InfoForm: TInfoForm
   Top = 106
   BorderIcons = []
   BorderStyle = bsNone
-  Caption = 'O programie...'
+  Caption = 'About...'
   ClientHeight = 439
   ClientWidth = 779
   Color = clWhite
@@ -25,9 +25,7 @@ object InfoForm: TInfoForm
     Width = 517
     Height = 19
     Cursor = crHandPoint
-    Caption = 
-      'Copyright '#169' 2006 by Tomasz Trejderowski. Wszelkie prawa zastrze'#380 +
-      'one!'
+    Caption = 'Copyright '#169' 2006 by Tomasz Trejderowski.'
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -42,7 +40,7 @@ object InfoForm: TInfoForm
     Top = 294
     Width = 542
     Height = 19
-    Caption = 'Ten program jest rozpowszechniany na licencji one-person-ware*.'
+    Caption = 'This program is licensed under MIT License, but is also a one-person-ware*.'
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -3606,9 +3604,9 @@ object InfoForm: TInfoForm
     Cursor = crHandPoint
     AutoSize = False
     Caption = 
-      '* Licencja one-person-ware oznacza, '#380'e program zosta'#322' stworzony ' +
-      'dla jednej tylko osoby - mojej '#380'ony! :) Mo'#380'esz dowolnie go u'#380'ywa' +
-      #263' i rozpowszechnia'#263', ale przy jednym zastrze'#380'eniu:'
+      '* One-person-ware license means, that this program was created for just t' +
+      'he one person -- my wife! You can use it in any possible way or mean, but keep ' +
+      'in mind, that all questions asking, why something is or is not '
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
     Font.Height = -9
@@ -3626,9 +3624,9 @@ object InfoForm: TInfoForm
     Cursor = crHandPoint
     AutoSize = False
     Caption = 
-      'Wszelkie pytania typu: "a czemu tak", "a dlaczego nie tak", "a c' +
-      'zemu to nie dzia'#322'a" b'#281'd'#261' uzyskiwa'#322'y automatyczn'#261' odpowied'#378': "bo ' +
-      'tak!" :] Mia'#322'em taki kaprys ja lub moja '#380'ona i ju'#380'! :]'
+      'implemented or why something works this or that way, will be ans' +
+      'wered by simple and nearly an automatic answer: Because! I had a need or desire to code this o' +
+      'r that, this or that way and nothing in the world woud change that! :]'
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
     Font.Height = -9
@@ -3651,13 +3649,11 @@ object InfoForm: TInfoForm
     Font.Name = 'Tahoma'
     Font.Style = []
     Lines.Strings = (
-      'Proste narz'#281'dzie, kt'#243're (mam nadziej'#281'!) u'#322'atwia i przys-'
-      'piesza proces t'#322'umaczenia tekst'#243'w pomi'#281'dzy j'#281'zykiem '
-      'polskim a angielskim poprzez udost'#281'pnienie u'#380'ytkowni-'
-      'kowi szybszego i bardziej elastycznego dost'#281'pu do najpo-'
-      'pularniejszych s'#322'ownik'#243'w internetowych oraz innych na-'
-      'rz'#281'dzi wspieraj'#261'cych t'#322'umaczenie tekst'#243'w (wyszukiwarki,'
-      's'#322'ownik wyraz'#243'w obcych, itp.).')
+      'This is a simple tool, that (I hope so!) can speed up and make a little bit '
+      'easier translation process between Polish and English. It tries to achie'
+      've this, by providing user with an elastic and quick access to '
+      'most popular translation services and other helpful tools (li'
+      'ke Wikipedia, Google search etc.).')
     ParentFont = False
     ReadOnly = True
     TabOrder = 0

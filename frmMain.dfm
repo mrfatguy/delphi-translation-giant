@@ -450,16 +450,15 @@ object MainForm: TMainForm
       Top = 12
       Width = 31
       Height = 13
-      Caption = 'Fraza:'
+      Caption = 'Phrase:'
     end
     object btnAbout: TButton
       Left = 728
       Top = 6
       Width = 78
       Height = 25
-      Hint = 'O programie#Kliknij, aby wy'#347'wietli'#263' informacje o programie.'
       Anchors = [akTop, akRight]
-      Caption = 'O programie'
+      Caption = 'About'
       ParentShowHint = False
       ShowHint = True
       TabOrder = 4
@@ -479,7 +478,7 @@ object MainForm: TMainForm
       Top = 6
       Width = 75
       Height = 25
-      Caption = 'Szukaj!'
+      Caption = 'Search!'
       Default = True
       Font.Charset = EASTEUROPE_CHARSET
       Font.Color = clWindowText
@@ -499,18 +498,15 @@ object MainForm: TMainForm
       ItemHeight = 13
       TabOrder = 1
       Items.Strings = (
-        'z polskiego na angielski'
-        'z angielskiego na polski')
+        'Polish-English'
+        'English-Polish')
     end
     object btnRemember: TButton
       Left = 536
       Top = 6
       Width = 75
       Height = 25
-      Hint = 
-        'Zapami'#281'taj na li'#347'cie#Kliknij, aby zapami'#281'ta'#263' dany wyraz na li'#347'ci' +
-        'e po lewej stronie'
-      Caption = 'Zapami'#281'taj'
+      Caption = 'Add to list'
       ParentShowHint = False
       ShowHint = True
       TabOrder = 3
@@ -523,7 +519,7 @@ object MainForm: TMainForm
     Width = 153
     Height = 549
     Anchors = [akLeft, akTop, akBottom]
-    Caption = ' Zapami'#281'tane wyrazy '
+    Caption = ' Saved searches '
     TabOrder = 1
     DesignSize = (
       153
@@ -534,10 +530,7 @@ object MainForm: TMainForm
       Width = 137
       Height = 481
       Cursor = crHandPoint
-      Hint = 
-        'Zapami'#281'tane wyrazy#Kliknij dwukrotnie pozycj'#281' na li'#347'cie, aby uru' +
-        'chomi'#263' t'#322'umaczenie. Naci'#347'nij klawisz Delete, aby usun'#261#263' zaznaczo' +
-        'n'#261' pozycj'#281' z listy'
+      Hint = 'Double click an item to perform search or hit Delete to remove item'
       Anchors = [akLeft, akTop, akBottom]
       Font.Charset = EASTEUROPE_CHARSET
       Font.Color = clWindowText
@@ -558,12 +551,11 @@ object MainForm: TMainForm
       Width = 137
       Height = 17
       Hint = 
-        'Automatycznie wykonuj#Je'#347'li zaznaczone, to po klikni'#281'ciu na li'#347'c' +
-        'ie powy'#380'ej nast'#281'puj od razu wyszukiwanie klikni'#281'tej frazy. W prz' +
-        'eciwnym przypadku - fraza jest jedynie wpisywana do pola wyszuki' +
-        'wania'
+        'If checked, any double click on list of saved searches will immediately start t' +
+        'he searching process. If unchecked, double click will only fill search field wi' +
+        'th given word, but you will have to manually start searching'
       Anchors = [akLeft, akBottom]
-      Caption = 'Automatycznie wykonuj'
+      Caption = 'Auto-start searching'
       ParentShowHint = False
       ShowHint = True
       TabOrder = 1
@@ -574,7 +566,7 @@ object MainForm: TMainForm
       Width = 66
       Height = 25
       Anchors = [akLeft, akBottom]
-      Caption = 'Wyczy'#347#263
+      Caption = 'Clear'
       ParentShowHint = False
       ShowHint = True
       TabOrder = 2
@@ -634,7 +626,7 @@ object MainForm: TMainForm
     end
     object tsTlumacz: TTabSheet
       Tag = 2
-      Caption = 'Onet T'#322'umacz'
+      Caption = 'Onet Tlumacz'
       Font.Charset = EASTEUROPE_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -690,8 +682,8 @@ object MainForm: TMainForm
         Align = alTop
         AutoSize = False
         Caption = 
-          'Je'#347'li wyraz zawiera polskie znaki, kliknij "Szukaj" na wy'#347'wietlo' +
-          'nej stronie, aby wykona'#263' t'#322'umaczenie.'
+          'If search string contains Polish letters you must manually perform searchi' +
+          'g in this dictionary, by clicking proper button.'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -727,9 +719,7 @@ object MainForm: TMainForm
         Height = 21
         Align = alTop
         AutoSize = False
-        Caption = 
-          'Uwaga! S'#322'ownik Ling.pl nie dzia'#322'a prawid'#322'owo dla wyraz'#243'w zawiera' +
-          'j'#261'cych polskie litery...'
+        Caption = 'Ling.pl dictionary fails on words with Polish letters!'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -829,8 +819,8 @@ object MainForm: TMainForm
         Align = alTop
         AutoSize = False
         Caption = 
-          'S'#322'ownik Merriam-Webster Online Dictionary dzia'#322'a tylko dla t'#322'uma' +
-          'cze'#324' z j'#281'zyka angielskiego na polski.'
+          'Merriam-Webster Online Dictionary works only for tranlations from English ' +
+          'to Polish and is disabled for opposite translations.'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -868,8 +858,9 @@ object MainForm: TMainForm
         Align = alTop
         AutoSize = False
         Caption = 
-          'S'#322'ownik Cambridge Advanced dzia'#322'a tylko dla t'#322'umacze'#324' z j'#281'zyka a' +
-          'ngielskiego na polski.'
+        Caption = 
+          'Cambrige Advanced dictionary works only for tranlations from English ' +
+          'to Polish and is disabled for opposite translations.'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -907,8 +898,9 @@ object MainForm: TMainForm
         Align = alTop
         AutoSize = False
         Caption = 
-          'S'#322'ownik OneLook.com dzia'#322'a tylko dla t'#322'umacze'#324' z j'#281'zyka angielsk' +
-          'iego na polski.'
+        Caption = 
+          'One-Look.com Dictionary works only for tranlations from English ' +
+          'to Polish and is disabled for opposite translations.'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -952,9 +944,8 @@ object MainForm: TMainForm
       Top = 5
       Width = 52
       Height = 54
-      Hint = 'Wstecz#Powr'#243't do poprzedniej strony (je'#347'li dost'#281'pna)'
       AllowAllUp = True
-      Caption = 'Wstecz'
+      Caption = 'Back'
       Enabled = False
       Glyph.Data = {
         B60D0000424DB60D000000000000360000002800000030000000180000000100
@@ -1079,9 +1070,8 @@ object MainForm: TMainForm
       Top = 5
       Width = 52
       Height = 54
-      Hint = 'W prz'#243'd#Przej'#347'cie do nast'#281'pnej strony (je'#347'li dost'#281'pna)'
       AllowAllUp = True
-      Caption = 'W prz'#243'd'
+      Caption = 'Forward'
       Enabled = False
       Glyph.Data = {
         B60D0000424DB60D000000000000360000002800000030000000180000000100
@@ -1206,11 +1196,9 @@ object MainForm: TMainForm
       Top = 5
       Width = 52
       Height = 54
-      Hint = 
-        'Od'#347'wie'#380'#Od'#347'wie'#380'a zawarto'#347#263' aktualnej (Click) lub wszystkich (Ctr' +
-        'l+Click) zak'#322'adek'
+      Hint = 'Refresh current (click) or all (Ctrl+click) tabs'
       AllowAllUp = True
-      Caption = 'Od'#347'wie'#380
+      Caption = 'Refresh'
       Enabled = False
       Glyph.Data = {
         B60D0000424DB60D000000000000360000002800000030000000180000000100
@@ -1335,9 +1323,7 @@ object MainForm: TMainForm
       Top = 5
       Width = 52
       Height = 54
-      Hint = 
-        'Stop#Zatrzymuje przetwarzanie strony na aktualnej (Click) lub ws' +
-        'zystkich (Ctrl+Click) zak'#322'adkach'
+      Hint = 'Stop current (click) or all (Ctrl+click) tabs'
       AllowAllUp = True
       Caption = 'Stop!'
       Enabled = False
@@ -1466,10 +1452,8 @@ object MainForm: TMainForm
       Anchors = [akTop, akRight]
       AutoSize = False
       Caption = 
-        'Klikanie na poszczeg'#243'lnych klawiszach panelu nawigacyjnego dzia-' +
-        ' '#322'a na aktualnie wy'#347'wietlon'#261' zak'#322'adk'#281'. Je'#347'li chcesz wykona'#263' dan'#261 +
-        ' operacj'#281' (tylko Odswie'#380', Stop lub Start) na wszystkich zak'#322'adka' +
-        'ch jednocze'#347'nie - przed klikni'#281'ciem przytrzymaj klawisz Ctrl.'
+        'All buttons operates on currently displayed tab only. Certain buttons' +
+        ' (Start, Stop, Refresh) can operate on all tabs as well, if clicked while holding Ctrl button.'
       WordWrap = True
     end
     object sbHome: TSpeedButton
@@ -1479,8 +1463,7 @@ object MainForm: TMainForm
       Width = 52
       Height = 54
       Hint = 
-        'Strona domowa#Wy'#347'wietla stron'#281' domow'#261' (pocz'#261'tkow'#261') wyszukiwarki ' +
-        'na danej (Click) lub wszystkich (Ctrl+Click) zak'#322'adkach'
+        'Display dictionary home page for current (click) or all (Ctrl+click) tabs.'
       AllowAllUp = True
       Caption = 'Start'
       Glyph.Data = {

@@ -1,8 +1,10 @@
-# GenName
+# Translation Giant
 
 This is Polish-English dual-side, web-based, multi-dictionary in Delphi with sources. It allows you to enter any Polish or English word and search for its translation or definiton in many Polish and English dictionaries and in Wikipedia. It is mostly usable for Polish users, as it was written for my wife, who is a translator. But, it can also be a bit usable for English-to-Polish translations.
 
 As for Delphi developers, this project can be usable to learn how to operate on web services from your Delphi application or for a nifty things like tabs with progress bar in tab title.
+
+_Take a look at date of last changes to this project! It is 2007 -- **eight years** from now on (as of writing this). Eight years means an era in IT and therefore don't be surprised that some (many? most?) of web services this program uses, are offline or not any more available. However, it shouldn't be a big problem to edit source code and fix this, by providing access to new, modern translation services or even for using this program for translation between different languages._
 
 **This project ABANDONED! There is no wiki, issues and no support. There will be no future updates. Unfortunately, you're on your own.**
 

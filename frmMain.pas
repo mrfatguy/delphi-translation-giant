@@ -117,13 +117,13 @@ var
 begin
         if eStr.Text = '' then
         begin
-                Application.MessageBox('Fraza wyszukiwania jest pusta!','B³¹d!',MB_OK+MB_ICONWARNING+MB_DEFBUTTON1);
+                Application.MessageBox('Empty search phrase!','Error!',MB_OK+MB_ICONWARNING+MB_DEFBUTTON1);
                 exit;
         end;
 
         if not Connected then
         begin
-                Application.MessageBox('Aby korzystaæ z tego programu niezbêdne jest po³¹czenie z Internetem.'+chr(13)+'Program nie wykry³ ¿adnego aktywnego po³¹czenia.'+chr(13)+''+chr(13)+'Po³¹cz siê z Internetem i spróbuj ponownie...','Brak po³¹czenia z Internetem!',MB_OK+MB_ICONWARNING+MB_DEFBUTTON1);
+                Application.MessageBox('You need an active connection to the Internet to use this program.'+chr(13)+'No active connection has been found.'+chr(13)+''+chr(13)+'Connect to the Internet and try again...','No Internet connection!',MB_OK+MB_ICONWARNING+MB_DEFBUTTON1);
                 exit;
         end;
 
@@ -325,7 +325,7 @@ end;
 
 procedure TMainForm.btnClearListClick(Sender: TObject);
 begin
-        if Application.MessageBox('Czy na pewno wyczyœciæ listê ostatnich zapytañ?','Pytanie...',MB_YESNO+MB_ICONQUESTION+MB_DEFBUTTON2) = ID_NO then exit;
+        if Application.MessageBox('Are you sure, you want to delete all items?','Confirm...',MB_YESNO+MB_ICONQUESTION+MB_DEFBUTTON2) = ID_NO then exit;
 
         cbList.Clear;
         cbList.Items.SaveToFile('LastPhrasesList.dat');
@@ -388,7 +388,7 @@ var
 begin
         if eStr.Text = '' then
         begin
-                Application.MessageBox('Fraza wyszukiwania jest pusta!','B³¹d!',MB_OK+MB_ICONWARNING+MB_DEFBUTTON1);
+                Application.MessageBox('Empty search phrase!','Error!',MB_OK+MB_ICONWARNING+MB_DEFBUTTON1);
                 exit;
         end;
 
